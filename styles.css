@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    padding: 20px;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Dark mode button */
+.dark-btn {
+    background: #222;
+}
+
+/* Counts */
+.counts {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Priority colors */
+.high { background: #ffcccc; }
+.medium { background: #fff3cd; }
+.low { background: #d4edda; }
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Buttons inside task */
+.actions button {
+    padding: 4px 8px;
+    margin-left: 5px;
+}
+
+.done-btn { background: green; }
+.delete-btn { background: red; }
+
+/* 🌙 DARK MODE */
+body.dark {
+    background: #121212;
+}
+
+body.dark .container {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark input,
+body.dark select {
+    background: #2c2c2c;
+    color: white;
+    border: 1px solid #444;
+}
+
+body.dark button {
+    background: #333;
+}
+
+body.dark .high { background: #5a1e1e; }
+body.dark .medium { background: #5a4a1e; }
+body.dark .low { background: #1e5a3a; }
