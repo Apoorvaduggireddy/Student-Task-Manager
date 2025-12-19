@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark {
+    background: #121212;
+    color: #fff;
+}
+
+header {
+    background: #4a6cf7;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.task-form,
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.task-form input,
+.task-form select,
+.controls input,
+.controls select {
+    padding: 8px;
+    flex: 1;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    background: #4a6cf7;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.high { background: #f8caca; }
+li.medium { background: #f6e7b2; }
+li.low { background: #c9f2d2; }
+
+li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.actions button {
+    margin-left: 5px;
+}
+
+.done-btn {
+    background: green;
+}
+
+.delete-btn {
+    background: red;
+}
+
+body.dark li {
+    color: black;
+}
