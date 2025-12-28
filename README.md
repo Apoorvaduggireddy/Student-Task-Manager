@@ -132,3 +132,8 @@ Drag & drop tasks between dates in the calendar
 Export tasks to PDF or CSV
 
 User authentication for multi-user support
+
+👩‍💻 Author
+
+Apoorva Duggireddy
+Frontend Learner | Web Development Enthusiast
